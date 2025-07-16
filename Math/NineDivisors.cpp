@@ -8,11 +8,11 @@ int countNumbers(int n) {
          for (int i = 0; i*i <= n; i++){
              int count = 0;
              int sq = i*i;
-             
-             for (int i =1; i*i<sq ; i++){
-                 if(sq % i)continue;
+
+             for (int j=1; j*j<sq ; j++){
+                 if(sq % j)continue;
                  count++;
-                 if(sq/i != i) count++;
+                 if(sq/j != j) count++;
                  if(count > 9)
                  break;
                  
