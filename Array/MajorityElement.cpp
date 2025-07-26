@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 #include <vector>
- vector<int> findMajorityElement(vector<int>& nums) {
-    int n = nums.size();
+ vector<int> findMajorityElement(vector<int>& arr) {
+    int n = arr.size();
     int count1 = 0; 
     int count2 = 0;
     int nums1 = 0;
     int nums2 = 0;
-    for(int num =0; num <n; num++){
+    for(int num : arr){
         if(num == nums1){
             count1++;
         } else if( num ==  nums2){
@@ -26,7 +26,7 @@ using namespace std;
     }
     count1 = 0;
     count2 = 0;
-    for(int num = 0; num < n; num++){
+    for(int num : arr){
         if(num == nums1){
             count1++;
         } else if(num == nums2){
