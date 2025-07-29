@@ -26,3 +26,16 @@ class Solution {
         
     }
 };
+
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    Solution sol;
+    cout << sol.missingNumber(arr) << endl;
+    return 0;
+}
