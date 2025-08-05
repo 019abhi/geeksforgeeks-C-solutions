@@ -19,11 +19,12 @@ int maxProfit(vector<int>& prices){
 
 int main(){
    int n;
-   cin>>n;
-   
+   cin >> n;
 
-
-
-
-
-}
+   cout<<"Stocks Prices"<<endl;
+   vector<int> prices(n);
+   for(int i = 0; i < n; ++i) {
+       cin >> prices[i];
+   }
+   cout << maxProfit(prices) << endl;
+   }
